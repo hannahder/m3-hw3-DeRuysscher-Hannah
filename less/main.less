@@ -1,8 +1,14 @@
 @import "variables";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
 header {
   background-color: @color-primary;
+  padding: 40px;
 }
 
 span {
@@ -10,7 +16,7 @@ span {
 }
 
 button {
-  background-color: @button;
+  background-color: @color-primary;
   font-family: @font;
   padding: @button-padding;
   border: @border;
@@ -23,13 +29,52 @@ section {
 }
 
 hr {
-  color: @hr;
+  max-width: 1380px;
+  margin: auto;
+  border: 10px solid @color-primary;
 }
 
 footer {
   background-color: @footer;
+  max-width: 1400px;
+  margin: auto;
+  text-align: center;
+  padding: 20px 0;
 }
 
 body {
   font-family: @font;
+  main {
+    max-width: 1400px;
+    margin: auto;
+  }
+}
+
+ul {
+  li {
+    display: inline;
+    padding: 30px;
+  }
+}
+
+.maintxt {
+  background-image: @background-image;
+  background-size: 1400px 500px;
+}
+
+p {
+  font-size: @para;
+}
+
+.container-fluid {
+  padding: @con;
+}
+
+.bg {
+  background-color: @bg;
+}
+
+.logo {
+  max-width: 400px;
+  width: 100%;
 }

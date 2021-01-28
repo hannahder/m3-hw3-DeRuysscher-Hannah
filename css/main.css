@@ -5,8 +5,13 @@
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9vAw.ttf) format('truetype');
 }
+* {
+  padding: 0;
+  margin: 0;
+}
 header {
   background-color: #f8df1f;
+  padding: 40px;
 }
 span {
   color: #ee252f;
@@ -23,11 +28,42 @@ section {
   background-color: #f3f3f3;
 }
 hr {
-  color: #f8df1f;
+  max-width: 1380px;
+  margin: auto;
+  border: 10px solid #f8df1f;
 }
 footer {
   background-color: #080801;
+  max-width: 1400px;
+  margin: auto;
+  text-align: center;
+  padding: 20px 0;
 }
 body {
   font-family: 'Roboto', sans-serif;
+}
+body main {
+  max-width: 1400px;
+  margin: auto;
+}
+ul li {
+  display: inline;
+  padding: 30px;
+}
+.maintxt {
+  background-image: url("../img/banner-bg.jpg");
+  background-size: 1400px 500px;
+}
+p {
+  font-size: 16px;
+}
+.container-fluid {
+  padding: 50px 200px;
+}
+.bg {
+  background-color: #f3f3f3;
+}
+.logo {
+  max-width: 400px;
+  width: 100%;
 }
