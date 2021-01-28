@@ -19,7 +19,7 @@ span {
 button {
   background-color: #f8df1f;
   font-family: 'Roboto', sans-serif;
-  padding: 10px;
+  padding: 10px 20px;
   border: none;
   border-radius: 8px;
   font-size: 18px;
@@ -50,10 +50,6 @@ ul li {
   display: inline;
   padding: 30px;
 }
-.maintxt {
-  background-image: url("../img/banner-bg.jpg");
-  background-size: 1400px 500px;
-}
 p {
   font-size: 16px;
 }
@@ -66,4 +62,14 @@ p {
 .logo {
   max-width: 400px;
   width: 100%;
+}
+.container1 {
+  background-image: url("../img/banner-bg.jpg");
+  width: 100%;
+  max-width: 1400px;
+  text-align: center;
+  padding: 100px 0;
+}
+.top-logo {
+  padding-bottom: 20px;
 }
