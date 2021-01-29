@@ -9,6 +9,46 @@
 header {
   background-color: @color-primary;
   padding: 40px;
+  ul {
+    li {
+      display: inline;
+      padding: 30px;
+    }
+  }
+}
+
+body {
+  font-family: @font;
+  main {
+    max-width: 1400px;
+    margin: auto;
+  }
+}
+
+.container1 {
+  background-image: url("../img/banner-bg.jpg");
+  width: 100%;
+  max-width: 1400px;
+  text-align: center;
+  padding: 100px 0;
+  .top-logo {
+    padding-bottom: 20px;
+  }
+}
+
+p {
+  .para();
+}
+
+.container-fluid {
+  padding: @con;
+  .bob {
+    padding-bottom: 20px;
+ }
+}
+
+.bg {
+  background-color: @bg;
 }
 
 span {
@@ -16,16 +56,7 @@ span {
 }
 
 button {
-  background-color: @color-primary;
-  font-family: @font;
-  padding: @button-padding;
-  border: @border;
-  border-radius: @border-radius;
-  font-size: @button-font;
-}
-
-section {
-  background-color: @section;
+  .button();
 }
 
 hr {
@@ -40,55 +71,13 @@ footer {
   margin: auto;
   text-align: center;
   padding: 20px 0;
-}
-
-body {
-  font-family: @font;
-  main {
-    max-width: 1400px;
-    margin: auto;
+  .logo {
+    max-width: 400px;
+    width: 100%;
   }
 }
 
-ul {
-  li {
-    display: inline;
-    padding: 30px;
-  }
-}
-
-p {
-  font-size: @para;
-}
-
-.container-fluid {
-  padding: @con;
-}
-
-.bg {
-  background-color: @bg;
-}
-
-.logo {
-  max-width: 400px;
-  width: 100%;
-}
-
-.container1 {
-  background-image: url("../img/banner-bg.jpg");
-  width: 100%;
-  max-width: 1400px;
-  text-align: center;
-  padding: 100px 0;
-}
-
-.top-logo {
-  padding-bottom: 20px;
-}
-
-.bob {
-  padding-bottom: 20px;
-}
+//Media Queries
 
 @media (max-width: 700px) {
   p {
@@ -99,4 +88,21 @@ p {
     padding: 30px 10px;
   }
 
+  ul {
+    display: block;
+    max-width: 150px;
+  }
+
+  ul li {
+    font-size: 14px;
+    line-height: 2.5;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .img {
+    display: none;
+  }
 }

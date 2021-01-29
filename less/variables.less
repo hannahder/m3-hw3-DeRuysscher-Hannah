@@ -1,22 +1,32 @@
+//colors
 @color-primary: #F8dF1F;
-
-@button-padding: 10px 20px;
-@border: none;
-@border-radius: 8px;
-@button-font: 18px;
-
-@section: #F3F3F3;
-
+@span-color: #EE252F;
+@bg: #F3f3f3;
 @footer: #080801;
 
-@span-color: #EE252F;
-
+//font
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 @font: 'Roboto', sans-serif;
 
+//buttons (mixins)
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  background-color: @color-primary;
+}
+
+//background-image
 @background-image: url("../img/banner-bg.jpg");
 
-@para: 16px;
+//paragraph (mixins)
+.para {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  font-family: 'Roboto', sans-serif;
+}
 
+//container padding
 @con: 50px 150px;
-
-@bg: #F3f3f3;

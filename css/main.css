@@ -5,6 +5,19 @@
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9vAw.ttf) format('truetype');
 }
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  background-color: #f8df1f;
+}
+.para {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  font-family: 'Roboto', sans-serif;
+}
 * {
   padding: 0;
   margin: 0;
@@ -13,19 +26,51 @@ header {
   background-color: #f8df1f;
   padding: 40px;
 }
+header ul li {
+  display: inline;
+  padding: 30px;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+body main {
+  max-width: 1400px;
+  margin: auto;
+}
+.container1 {
+  background-image: url("../img/banner-bg.jpg");
+  width: 100%;
+  max-width: 1400px;
+  text-align: center;
+  padding: 100px 0;
+}
+.container1 .top-logo {
+  padding-bottom: 20px;
+}
+p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  font-family: 'Roboto', sans-serif;
+}
+.container-fluid {
+  padding: 50px 150px;
+}
+.container-fluid .bob {
+  padding-bottom: 20px;
+}
+.bg {
+  background-color: #f3f3f3;
+}
 span {
   color: #ee252f;
 }
 button {
-  background-color: #f8df1f;
-  font-family: 'Roboto', sans-serif;
   padding: 10px 20px;
   border: none;
   border-radius: 8px;
   font-size: 18px;
-}
-section {
-  background-color: #f3f3f3;
+  background-color: #f8df1f;
 }
 hr {
   max-width: 1380px;
@@ -39,42 +84,9 @@ footer {
   text-align: center;
   padding: 20px 0;
 }
-body {
-  font-family: 'Roboto', sans-serif;
-}
-body main {
-  max-width: 1400px;
-  margin: auto;
-}
-ul li {
-  display: inline;
-  padding: 30px;
-}
-p {
-  font-size: 16px;
-}
-.container-fluid {
-  padding: 50px 150px;
-}
-.bg {
-  background-color: #f3f3f3;
-}
-.logo {
+footer .logo {
   max-width: 400px;
   width: 100%;
-}
-.container1 {
-  background-image: url("../img/banner-bg.jpg");
-  width: 100%;
-  max-width: 1400px;
-  text-align: center;
-  padding: 100px 0;
-}
-.top-logo {
-  padding-bottom: 20px;
-}
-.bob {
-  padding-bottom: 20px;
 }
 @media (max-width: 700px) {
   p {
@@ -82,5 +94,19 @@ p {
   }
   .container-fluid {
     padding: 30px 10px;
+  }
+  ul {
+    display: block;
+    max-width: 150px;
+  }
+  ul li {
+    font-size: 14px;
+    line-height: 2.5;
+  }
+  img {
+    max-width: 100%;
+  }
+  .img {
+    display: none;
   }
 }
