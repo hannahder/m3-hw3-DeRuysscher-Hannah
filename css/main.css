@@ -54,7 +54,7 @@ p {
   font-family: 'Roboto', sans-serif;
 }
 .container-fluid {
-  padding: 50px 150px;
+  padding: 60px 150px;
 }
 .container-fluid .bob {
   padding-bottom: 20px;
@@ -88,12 +88,14 @@ footer .logo {
   max-width: 400px;
   width: 100%;
 }
+@media (max-width: 768px) {
+  .container-fluid {
+    padding: 60px;
+  }
+}
 @media (max-width: 700px) {
   p {
     font-size: 12px;
-  }
-  .container-fluid {
-    padding: 30px 10px;
   }
   ul {
     display: block;
@@ -104,8 +106,10 @@ footer .logo {
     line-height: 2.5;
   }
   img {
-    max-width: 100%;
+    max-width: 75%;
   }
+}
+@media (max-width: 575px) {
   .img {
     display: none;
   }
